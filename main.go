@@ -1,11 +1,17 @@
 package main
 
-import "github.com/joho/godotenv"
+import (
+	"gitTest/model"
+
+	"github.com/joho/godotenv"
+)
 
 func init() {
 	godotenv.Load(".env")
 }
 
 func main() {
+	var envVars model.EnvironmentVariables = model.EnvironmentVariables{}
 
+	envVars.Load()
 }
