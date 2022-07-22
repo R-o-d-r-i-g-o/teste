@@ -1,3 +1,3 @@
-module rodrigoPart
+module gitTest
 
 go 1.18
