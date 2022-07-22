@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"gitTest/model"
 
 	"github.com/joho/godotenv"
@@ -14,4 +15,6 @@ func main() {
 	var envVars model.EnvironmentVariables = model.EnvironmentVariables{}
 
 	envVars.Load()
+
+	fmt.Println(envVars)
 }
